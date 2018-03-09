@@ -1,0 +1,11 @@
+[Unit]
+Description=Present HTML5 EventSource data from rfid interface on TCP socket
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/rfidserver
+
+[Install]
+WantedBy=multi-user.target
+

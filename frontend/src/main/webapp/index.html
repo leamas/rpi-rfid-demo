@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>RFID demo</h2>
+        Event: <div id="stream"> </div>
+    </body>
+</html>
+
+<script>
+var eventSource = new EventSource("http://nti-rpi.duckdns.org:8080/rfid")
+
+function onBodyLoad() {
+    eventSource.onmessage = function(e) {
+        element = document.getElementById('stream');
+        element.innerHTML = e.data;
+    }
+}
+window.onload = onBodyLoad();
+</script>
