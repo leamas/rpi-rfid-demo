@@ -18,7 +18,12 @@
             <groupId>com.pi4j</groupId>
             <artifactId>pi4j-core</artifactId>
             <version>1.2-SNAPSHOT</version>
-        </dependency>
+	</dependency>
+	<dependency>
+            <groupId>com.github.leamas</groupId>
+            <artifactId>pi4j_rc522</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+	</dependency>
      </dependencies>
     <build>
         <finalName>rpi-rfid-server</finalName>
