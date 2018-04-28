@@ -2,3 +2,6 @@ target
 build
 dist
 *egg-info
+.classpath
+.project
+.settings

@@ -15,9 +15,9 @@ public class RfidEventServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
-	public void doGet(HttpServletRequest request, HttpServletResponse response) 
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		response.setContentType("text/event-stream");
 		response.setCharacterEncoding("UTF-8");
 
@@ -39,3 +39,11 @@ public class RfidEventServlet extends HttpServlet {
 		rfidSocket.close();
 	}
 }
+
+//public class ModHelloWorld extends HttpServlet{
+//    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException{
+//        response.sendRedirect("http://www.google.com");
+//    }
+//}
+//
+//https://stackoverflow.com/questions/17036130/how-to-return-an-html-document-from-java-servlet

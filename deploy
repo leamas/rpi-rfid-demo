@@ -1,0 +1,6 @@
+#!/bin/sh
+set -x
+
+scp target/rpi-rfid-server.war  mumin.crabdance.com: && \
+    ssh mumin.crabdance.com scp rpi-rfid-server.war \
+        nti-rpi.duckdns.org:/var/lib/tomcat8/webapps
