@@ -7,7 +7,7 @@
 </html>
 
 <script>
-var eventSource = new EventSource("http://nti-rpi.duckdns.org:8080/rfid")
+var eventSource = new EventSource("http://nti-rpi.duckdns.org:8080/rpi-rfid-server")
 
 function onBodyLoad() {
     eventSource.onmessage = function(e) {
